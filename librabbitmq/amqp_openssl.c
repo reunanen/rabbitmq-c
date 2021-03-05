@@ -671,7 +671,6 @@ int amqp_uninitialize_ssl_library(void) {
 #ifndef AMQP_OPENSSL_V110
   ERR_remove_state(0);
 #endif
-  FIPS_mode_set(0);
 
   CRYPTO_set_locking_callback(NULL);
   CRYPTO_set_id_callback(NULL);
